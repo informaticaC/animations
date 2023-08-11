@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabieliten animations</title>
+    <link rel="stylesheet" href="./style.css">
+    
+
+</head>
+<body class="darkTheme">
+    <nav class = "navbar">
+
+        <span><a href="#home">Grabieliten Animations</a></span>
+
+        <ul class="navbar__menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+
+        </ul>
+    </nav>
+    <div class="container__principal">
+
+        <section id="home" class="hidden" >
+            <h1 class="home_title">Soy <span>Gabriel Pesoa</span> y soy <span>desarrollador Frontend</span></h1>
+        </section>
+        <section id="about" class="hidden">
+            <h2>Quien soy</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, alias. Cumque saepe error sapiente unde veniam commodi et beatae voluptates. Id, consequatur. Corrupti expedita eligendi pariatur? Exercitationem assumenda nobis dolor.</p>
+            <div class="about__img">
+                <img src="./assets/image/pexels-oussama-bergaoui-463684.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="portfolio" class="">
+            <h2>Portafolio</h2>
+            <div class="portfolios">
+                <div class="portfolio hidden">
+                    <img src="./assets/image/img1.jpg" alt="portal1">
+                </div>
+                <div class="portfolio hidden">
+                    <img src="./assets/image/img2.jpg" alt="portal2">
+                </div>
+                <div class="portfolio hidden">
+                    <img src="./assets/image/img3.jpg" alt="portal3">
+                </div>
+                <div class="portfolio hidden">
+                    <img src="./assets/image/img4.jpg" alt="portal4">
+                </div>
+                <div class="portfolio hidden">
+                    <img src="./assets/image/img5.jpg" alt="portal5">
+                </div>
+            </div>
+            
+             
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contáctame</h2>
+
+            <form action="" class="form">
+                <input type="text" placeholder="Ingresa tu nombre" name="nameUser" id="nameUser" required>
+                <input type="email" placeholder="Ingresa tu email" name="emailUser" id="emailUser" required>
+                <textarea name="commentUser" id="commentUser" cols="30" rows="10" placeholder="Escríbeme ..."></textarea>
+                <button class="btn">Enviar</button>
+            </form>
+            
+        </section>
+        
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+:root{
+    --color-bg: #FAF7F0;
+    --color-font: #181818;
+    --color-principal: #5f9df7;
+
+
+}
+body {
+    background-color: var(--color-bg);
+    color: var(--color-font);
+}
+
+body.darkTheme {
+    --color-bg:  #181818;
+    --color-font: #FAF7F0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+ul {
+    list-style: none;
+   
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
+    opacity: .7;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.container__principal{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.home_title {
+    text-align: center;
+}
+
+.home_title span {
+    color: var(--color-principal);
+}
+
+section{
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.about__img {
+    width: 65%; 
+    border-radius: 20%;
+    overflow: hidden;
+    
+}
+
+.portfolios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.form{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    width: 100%; 
+    /* max-width: 360px; */
+}
+
+.form input,
+.form textarea {
+    padding: 1rem;
+    border-radius: .4rem;
+    outline: none;
+    border: 2px solid transparent;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transition: border 0.5s;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 2px solid var(--color-principal);
+}
+
+.btn {
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 0.5rem ;
+    padding: 1rem;
+    color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+@media  (min-width: 800px) {
+    .portfolios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px;
+    }
+
+    .portfolios img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+    }
+     
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s, transform 0.8s;
+    
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
