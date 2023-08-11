@@ -50,17 +50,20 @@ a{
     left: 0;
     background-color: var(--color-bg);
     opacity: .7;
+    background-color: red;
+    z-index: 999;
 }
 
 .navbar__menu {
     display: flex;
     gap: 1rem;
-    
+    background-color: red;
 }
 
 .container__principal{
     max-width: 80%;
     margin: 0 auto;
+    z-index: 1;
 
 }
 
@@ -136,7 +139,7 @@ section{
         grid-template-rows: 300px;
     }
 
-    .portfolios img{
+    .portfolio img{
         height: 100%;
         width: 100%;
     }
