@@ -49,21 +49,32 @@ a{
     top: 0;
     left: 0;
     background-color: var(--color-bg);
-    opacity: .7;
-    background-color: red;
+    opacity: .75;
     z-index: 999;
 }
 
 .navbar__menu {
     display: flex;
     gap: 1rem;
-    background-color: red;
+    
+}
+
+.link {
+    
+    padding:0.5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+}
+
+.link--active{
+    background-color: var(--color-principal);
 }
 
 .container__principal{
     max-width: 80%;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 0;
+    
 
 }
 
@@ -99,6 +110,23 @@ section{
     gap: 1rem;
 }
 
+.portfolio:nth-child(1) {
+    transition-delay: 200ms;
+}
+.portfolio:nth-child(2) {
+    transition-delay: 300ms;
+}
+.portfolio:nth-child(3) {
+    transition-delay: 400ms;
+}
+.portfolio:nth-child(4) {
+    transition-delay: 500ms;
+}
+.portfolio:nth-child(5) {
+    transition-delay: 600ms;
+}
+
+
 .form{
     display: flex;
     gap: .5rem;
@@ -112,14 +140,14 @@ section{
     padding: 1rem;
     border-radius: .4rem;
     outline: none;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     transition: border 0.5s;
 }
 
 .form input:focus,
 .form textarea:focus {
-    border: 2px solid var(--color-principal);
+    border: 3px solid var(--color-principal);
 }
 
 .btn {
@@ -139,6 +167,11 @@ section{
         grid-template-rows: 300px;
     }
 
+    .portfolio {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
     .portfolio img{
         height: 100%;
         width: 100%;
@@ -152,7 +185,7 @@ section{
 
 .hidden {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-150px);
     transition: opacity 0.6s, transform 0.8s;
     
 }

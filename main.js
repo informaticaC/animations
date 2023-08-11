@@ -1,4 +1,5 @@
 const hiddenElement = document.querySelectorAll('.hidden');
+const link = document.querySelectorAll(".link");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
