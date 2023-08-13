@@ -110,6 +110,11 @@ section{
     gap: 1rem;
 }
 
+.portfolio {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 .portfolio:nth-child(1) {
     transition-delay: 200ms;
 }
@@ -167,16 +172,12 @@ section{
         grid-template-rows: 300px;
     }
 
-    .portfolio {
-        border-radius: 15px;
-        overflow: hidden;
-    }
-
-    .portfolio img{
+    .portfolios img{
         height: 100%;
         width: 100%;
     }
 
+    
     .form {
         width: 80%;
     }
